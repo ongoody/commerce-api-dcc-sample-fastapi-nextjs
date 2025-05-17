@@ -32,7 +32,3 @@ pnpm install # or: npm install
 # Run server
 pnpm dev # or: npm run dev
 ```
-
-## How it works
-
-The frontend loads a credit card input form from VGS,
