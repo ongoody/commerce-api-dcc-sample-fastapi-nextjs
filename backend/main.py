@@ -20,11 +20,12 @@ app = FastAPI()
 
 goody_commerce_api_key = os.getenv("GOODY_COMMERCE_API_KEY")
 goody_commerce_api_base_url = os.getenv("GOODY_COMMERCE_API_BASE_URL", "https://api.sandbox.ongoody.com")
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:4001")
 end_user_id = "123" # for testing
 
 # CORS configuration
 origins = [
-    "http://localhost:4001",  # Frontend URL
+    frontend_url,
 ]
 
 app.add_middleware(
