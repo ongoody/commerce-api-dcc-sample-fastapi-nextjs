@@ -23,16 +23,16 @@ export default function useVGS() {
     const collect = (await loadVGSCollect({
       vaultId: GOODY_VGS_VAULT_ID,
       environment: GOODY_VGS_ENVIRONMENT,
-      version: "2.12.0",
+      version: "3.0.0",
     })) as any;
 
     const vgsForm = collect.init();
     vgsForm.useCname(GOODY_VGS_CNAME);
 
     // Use VGS Satellite in development.
-    if (process.env.NEXT_PUBLIC_GOODY_VGS_LOCAL === "true") {
-      vgsForm.connectSatellite(9098);
-    }
+    // if (process.env.NEXT_PUBLIC_GOODY_VGS_LOCAL === "true") {
+    //   vgsForm.connectSatellite(9098);
+    // }
 
     vgsFormRef.current = vgsForm;
 

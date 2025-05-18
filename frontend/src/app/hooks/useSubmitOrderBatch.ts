@@ -10,6 +10,7 @@ export default function useSubmitOrderBatch() {
   async function handleBatchSubmit(paymentMethodID: string) {
     setBatchIsSubmitting(true);
     setBatchMessage(null);
+    setBatchData(null);
 
     try {
       const response = await fetch(
