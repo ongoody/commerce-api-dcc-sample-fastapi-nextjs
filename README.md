@@ -2,8 +2,7 @@
 
 Demonstrates adding a credit card with VGS Collect.js to Goody's Commerce API.
 
-Requires Node.js (built on 22.x), [pnpm](https://pnpm.io/installation) (npm
-works fine also), Python (built on 3.13.x), and [uv](https://github.com/astral-sh/uv).
+Requires Node.js (built on 22.x), [pnpm](https://pnpm.io/installation), Python (built on 3.13.x), and [uv](https://github.com/astral-sh/uv).
 
 ## Backend
 
@@ -27,10 +26,10 @@ Runs at http://localhost:4001
 
 ```bash
 # Install dependencies
-pnpm install # or: npm install
+pnpm install
 
 # Run server
-pnpm dev # or: npm run dev
+pnpm dev
 ```
 
 ## How it works
